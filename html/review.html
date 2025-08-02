@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your views and experience on our website.">
+    <title>Leave a review</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e4d8d0e499.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- // start of header-->
+    <header>
+        <div>
+            <!-- insert logo here-->
+            <div >
+            <a href="../index.html" >
+                <img src="../images/logo2.png" alt="Cook Easy logo" class="logo narrow-logo" >
+            </a>
+            </div>
+        <!-- // start of nav bar-->
+            <div >
+                <nav>
+                    
+                    <ul>
+                        <li><a href="dough.html">Dough</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="lunch-dinner.html">Lunch & Dinner Ideas</a></li>
+                        <li><a href="all-recipes.html">All Recipes</a></li>
+                        <li><a href="javascript:void(0);" class="icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- // end of nav bar-->
+        </div>
+    </header>
+    <!-- // end of header-->
+
+    <!-- // start of main-->
+    <main class="section-back">
+        <div class="form-wrap">
+            <form name="review">
+                <div>
+                    <h1 class="form-h1">Your feedback is important to us!</h1>
+                    <fieldset>
+                        <legend><i class="fa-regular fa-user"></i> Tell us about you!</legend>
+                        <div class="form-content">
+                            <label for="txtname">Name:</label>
+                            <input type="text" name="fname" id="txtname" autofocus tabindex="1" onblur="val_name();">
+                            
+                        </div>
+                        <div class="form-content">
+                            <label for="txtemail">Email:</label>
+                            <input type="email" name="email" id="txtemail" onblur="val_email();">
+                            <p class="error-msg" id="email-err" style="display: none;">Please enter a valid email address!</p>
+                        </div>
+                        <div class="form-content">
+                            <input type="checkbox" id="chkemail" style="width: 50px;">Email me about new recipes!
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><i class="fa-regular fa-comments"></i> Leave a review!</legend>
+                        <div class="form-content">
+                            <label for="txtreview">Write your review:</label><br>
+                            <textarea name="review" id="txtreview" cols="29" rows="8" onblur="review_length();"></textarea>
+                            <p class="error-msg" id="review-err" style="display: none;">Review must not be more than 150 characters.</p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><i class="fa-regular fa-star"></i> Rate us!</legend>
+                        <div class="form-content">
+                            <label for="numrate">How would you rate us?</label>
+                            <input type="number" id="numrate" name="rating" min="1" max="5">
+                        </div>
+                    </fieldset>
+                    <!-- audio -->
+                    <audio src="../audio/timer.mp3" id="myAudio"></audio>
+                    <input type="button" name="submit" value="Submit review" class="btns" id="btnSubmit" onclick="playAudio();">
+                    <input type="reset" name="reset" value="Clear form" class="btns">
+                    <div id="thank-you" style="display: none;">
+                        <p>Thank you for your feedback!</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!-- // end of main-->
+    </main>
+    <!-- // start of footer-->
+    <footer>
+        <div class="content-wrap flex-container">
+            <div>
+                <a href="about-us.html" class="footer-link">
+                    <p>About Us</p>
+                </a>
+                <p>&copy;CookEasyWithUs</p>
+                <p>Created by Saania H.</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px;border-radius:0;"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>
+            <div>
+                <a href="review.html" class="footer-link"><p>Feel free to leave us a review!</p></a>
+            </div>
+        </div>
+    </footer>
+    <!-- // end of footer-->
+
+    <!-- //javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../js/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,862 @@
+/* defining the colors used */
+:root {
+    --color-background: #FFFFFF;
+    --color-accent: #CAEDFD;
+    --color-text: #012733;
+    --color-primary: #316778;
+    --color-highlight: #DCDDDE;
+    --color-border: #0E3845;
+}
+
+/*defining the style for pages */
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.content-wrap {
+    /* border: 2px solid purple; */
+    max-width: 1300px;
+    padding: 60px 50px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* color for text in body */
+header, main {
+    color: var(--color-text);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    width: 100%;
+    font-family: myFont3, cursive, sans-serif;
+}
+
+/* style for the logo */
+.logo {
+    height: 100px;
+    width: 140px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    
+}
+
+/* .nav-div {
+    position: relative;
+
+} */
+
+/* nav bar styles */
+nav {
+    text-align: center;
+    color: var(--color-text);
+    font-style: oblique;
+    /* width: 100%; */
+    height: 100px;
+    /* position: fixed; */
+    border: 2px solid transparent;
+    font-family: myFont3, cursive, sans-serif;
+    z-index: 5;
+    /* position: absolute;
+    inset: 0; */
+    margin-left: 150px;
+}
+
+nav li {
+    margin: 30px 60px;
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-border);
+    transition: 0.2s;
+    text-decoration: underline;
+    text-transform: unset;
+    font-variant: small-caps;
+}
+
+/* end of nav bar style  */
+
+section h1, h2 {
+    color: var(--color-text);
+    margin-left: 80px;
+    font-style: oblique;
+    font-family: myFont2, cursive, sans-serif;
+    /* background-color: rgba(223, 234, 240, 0.6); */
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-top: auto;
+
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* color for the page background */
+.section-back {
+    background: var(--color-accent);
+    background: radial-gradient(circle farthest-side at center center, var(--color-accent) 15%, var(--color-background) 100%);
+
+
+}
+
+/* style for image overlay */
+.image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    
+}
+
+.image__img {
+    /* display: block; */
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    color: var(--color-background);
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+}
+
+.image__overlay:hover {
+    opacity: 0.9;
+}
+
+.gallery-title {
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: myFont;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-subtitle {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+/* end of image overlay */
+
+/* footer style */
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    /* height: 185px; */
+    background-color: var(--color-border);
+    
+}
+
+.footer-text {
+    font-size: 0.8em;
+}
+
+footer p {
+    color: var(--color-highlight);
+}
+
+footer i {
+    color: var(--color-background);
+}
+
+.footer-link {
+    font-variant: small-caps;
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* end of footer style */
+
+/* section 1 of pages */
+#section-1 {
+    width: 100%;
+    font-size: 1.5em;
+    height: 500px;
+}
+
+.index-text {
+    margin: 75px 0;
+    font-size: 1.8em;
+}
+/* end of index section 1 of pages */
+
+/* info section for pages */
+
+.info-section {
+    margin-left: 0;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding-right: 20px;
+}
+
+.info-link {
+    margin-left: 25px;
+    font-style: oblique;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+.info-wrap {
+    /* border: 2px solid purple; */
+    max-width: 1100px;
+    padding: 30px 20px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cookie-tips {
+    margin: 20px;
+}
+
+.cookie-tips summary{
+    font-size: 1.4em;
+    font-family: myFont;
+}
+
+.cookie-tips details {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.cookie-tips details iframe {
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info-title {
+    font-size: 1.4em;
+    margin-bottom: 0;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+iframe{
+    width: 719px;
+    height: 404px;
+}
+/* end of info section for pages */
+
+/* text section for pages */
+.text-section {
+    padding: 0 0 0 25px;
+    max-width: 400px;
+    font-size: 1.1em;
+}
+
+.ques-title {
+    font-size: 1.5em;
+    background-color: transparent;
+    margin-left: 20px;
+    font-family: myFont3;
+}
+
+.components {
+    padding: 0 0 0 50px;
+    font-size: 1.1em;
+}
+
+.titles {
+    font-family: myFont2;
+    font-size: 2.1em;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+/* end of text section for pages */
+
+/* recipe cards */
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    width: 300px;
+    margin: 20px 20px auto auto;
+    height: 380px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    z-index: 5;
+}
+
+.recipe-card img:hover {
+    opacity: 0.8;
+}
+
+.recipe-card-text {
+    padding: 5px 20px;
+}
+
+.recipe-card-text h3 {
+    text-align: center;
+    background: transparent;
+    font-family: myFont;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+/* end of recipe cards */
+
+/* recipe of the month style */
+.month-recipe {
+    font-family: myFont2;
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
+    letter-spacing: 2px;
+}
+
+#month-recipe-img {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+#month-recipe-text {
+    text-align: justify;
+    font-size: 1.2em;
+    width: 300px;
+    margin-left: auto;
+}
+
+.get-recipe-btn {
+    cursor: pointer;
+    background-color: var(--color-border);
+    color: var(--color-background);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: myFont;
+    font-size: 1.2em;
+}
+
+/* end of recipe of the month style */
+
+/* style for emojis */
+.emoji {
+    font-style: normal;
+}
+/* end of style for emojis */
+
+/* section div p {
+    font-size: 1.3em;
+    font-style: oblique;
+    padding-left: 30%;
+    padding-top: 8%;
+} */
+
+/* testimonial section */
+
+.testimonial-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.testimonial-card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+cite {
+    margin: 30px;
+    padding-top: 1px;
+}
+
+.testimonial-text {
+    width: 250px;
+    margin: 7px;
+}
+/* end of testimonial section */
+
+/*scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--color-background);
+    border-radius: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text);
+}
+/* end of scrollbar settings */
+
+/* font styles used */
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/KaushanScript-Regular.otf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/DancingScript-Regular.otf);
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(../fonts/FiraSans-Regular.otf);
+}
+
+/* end of font styles */
+
+/* styles for h2 */
+h2 {
+    font-family: myFont2;
+    z-index: 1;
+}
+
+/*  banner images */
+.background-cake {
+    background: linear-gradient(rgba(217, 217, 217, 0.5), rgba(136, 167, 159, 0.2)), url(../images/cake-background.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.background-cookie {
+    background: linear-gradient(rgba(248, 250, 247, 0.5), rgba(253, 253, 253, 0.2)), url(../images/cookie-background.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.background-dough {
+    background: linear-gradient(rgba(245, 244, 240, 0.5), rgba(207, 199, 188, 0.2)), url(../images/dough-background.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.background-main-course {
+    background: linear-gradient(rgba(	196, 201, 207, 0.5), rgba(126, 109, 89, 0.2)), url(../images/main-course-background.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+/* end of banner images */
+.gallery-section1{
+    opacity: 0.75;
+    text-align: center;
+    display: inline-block;
+    font-size: 3.0em;
+    margin: 100px auto;
+    font-weight: bold;
+    
+}
+
+.section-wrap {
+    /* border: 2px solid purple; */
+    overflow: auto;
+    max-width: 1100px;
+    padding: 60px 50px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* nav-bar icon style */
+/* .icon-class {
+    font-size: 1.5em;
+    margin-top: 40px;
+} */
+
+/* end of nav-bar icon style */
+
+/* start of hamburger nav menu */
+
+.icon {
+    display: none;
+    z-index: 10;
+    
+}
+
+.showing {
+    max-height: 100em;
+    margin-top: 0;
+}
+
+/* end of hamburger nav manu */
+
+img {
+    border-radius: 10px;
+}
+
+.gallery-pic {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+/* start of review form style */
+.form-wrap {
+    /* border: 2px solid green; */
+    overflow: hidden;
+    max-width: 800px;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-content {
+    padding: 10px;
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 1.5em;
+    font-family: myFont;
+}
+
+.form-h1 {
+    font-family: myFont2;
+    font-size: 2.3em;
+    font-style: oblique;
+}
+
+legend {
+    font-size: 1.3em;
+    font-family: myFont;
+}
+
+fieldset {
+    border-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+input, textarea {
+    border-radius: 5px;
+}
+
+input {
+    width: 220px;
+    height: 27px;
+}
+
+.btns {
+    margin: 20px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    height: 50px;
+    font-weight: bold;
+    font-family: myFont;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+#chkemail {
+    margin: 0;
+    padding: 0;
+}
+
+.error-msg {
+    font-family: myFont3;
+    font-size: 0.7em;
+}
+
+/* end of review form style */
+
+/* steps styles */
+.steps-img-wrap{
+    /* border: 2px solid purple; */
+    max-width: 1300px;
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.steps-img {
+    width: 250px;
+    height: 200px;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.cupcakes-variants {
+    margin: 40px;
+}
+
+.cupcakes-variants figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    width: 250px;
+    position: relative;
+}
+
+.large-img {
+    width: 100%;
+    height: auto;
+}
+
+/* video style */
+video {
+    border-radius: 10px;
+}
+/* end of video style */
+
+/* recipe pages style */
+.recipe-wrap {
+    /* border: 2px solid red; */
+    max-width: 1300px;
+    padding: 0 50px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.instructions {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.2em;
+    /* border: 2px solid green; */
+}
+
+.instructions h2 {
+    background: transparent;
+    font-size: 1.8em;
+}
+
+.instructions li {
+    margin: 15px;
+}
+
+.ingredients {
+    width: 300px;
+    height: auto;
+    font-size: 1.2em;
+    /* border: 2px solid red; */
+}
+
+.ingredients h2 {
+    background: transparent;
+    /* margin-bottom: 50px; */
+    font-size: 1.8em;
+}
+
+.ingredients th, .ingredients td {
+    padding: 10px;
+    text-align: left;
+}
+
+.recipe-p {
+    font-size: 1.2em;
+    margin: 30px;
+    
+    /* text-align: justify; */
+}
+
+.process-title {
+    background: transparent;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.tip{
+    width: 40%;
+    border-left: 5px solid var(--color-border);
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.tip p {
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.tip h2 {
+    margin: 0 0 0 10px;
+    background: transparent;
+    font-size: 1.7em;
+}
+
+.recipe-title {
+    background: transparent;
+    font-size: 3.0em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.comment-title {
+    background: transparent;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.comment-icon{ 
+    font-size: 1.8em;
+    margin: 7px;
+    background: transparent;
+}
+
+#comment {
+    margin: 10px 0 0 0;
+}
+
+.btn-comment {
+    width: 26%; 
+    /* border: 2px solid green;  */
+    text-align: left;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.bookmark {
+    text-decoration: underline;
+}
+
+.bookmark a:hover {
+    font-variant: small-caps;
+}
+
+/* comment button size */
+.btn-comment-style {
+    margin: 20px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    font-family: myFont;
+    font-size: 1.0em;
+    letter-spacing: 1px;
+}
+
+/* time and servings section */
+.time div {
+    margin: 30px;
+}
+
+.time i {
+    font-size: 2.0em;
+}
+/* end of styles for recipe page */
+
+/* start of hamburger menu */
+@media (max-width: 1100px) {
+
+    nav {
+        height: 100px;
+        background: transparent;
+        /* border: none; */
+        top: 0;
+        right: 0;
+        position: relative;
+        margin-top: 10px;
+        border: 2px solid transparent;
+        margin-left: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        background: var(--color-accent);
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        width: 100%;
+        }
+
+    nav li {
+        margin: 20px;
+        
+    }
+
+    nav .icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        font-size: 1.9em;
+        background: transparent;
+    }
+
+    .narrow-content {
+        flex: 1;
+    }
+
+    .narrow-logo {
+        z-index: 10;
+        position: absolute;
+        margin-bottom: 10px;
+        top: 0;
+        left: 0 ;
+    }
+}
+
+    /* end of hamburger menu */

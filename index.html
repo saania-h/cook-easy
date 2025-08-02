@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Whether you are a beginner or a pro, here you can find the find the one recipe to impress your friends and family.">
+    <title>Cook Easy With Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e4d8d0e499.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- // start of header-->
+    <header>
+        <div>
+            <!-- insert logo here-->
+            <div >
+            <a href="../index.html" >
+                <img src="../images/logo2.png" alt="Cook Easy logo" class="logo narrow-logo" >
+            </a>
+            </div>
+        <!-- // start of nav bar-->
+            <div >
+                <nav>
+                    
+                    <ul>
+                        <li><a href="html/dough.html">Dough</a></li>
+                        <li><a href="html/cakes.html">Cakes</a></li>
+                        <li><a href="html/cookies.html">Cookies</a></li>
+                        <li><a href="html/lunch-dinner.html">Lunch & Dinner Ideas</a></li>
+                        <li><a href="html/all-recipes.html">All Recipes</a></li>
+                        <li><a href="javascript:void(0);" class="icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- // end of nav bar-->
+        </div>
+    </header>
+    <!-- // end of header-->
+
+    <!-- // start of main-->
+    <main class="section-back">
+    <!-- // start of slideshow-->
+    <div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/maccheese-ss.webp" alt="mac and cheese">
+                <div class="text">Creamy Mac & Cheese</div>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="html/cupcakes.html">
+                    <img src="images/cupcake-ss.webp" alt="chocolate cupcake">
+                    <div class="text">Classic Cupcakes</div>
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="html/butter-cookies.html">
+                    <img src="images/butter-cookies-ss.webp" alt="butter cookies">
+                    <div class="text">Melt-in-the-mouth butter cookies</div>
+                </a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>    
+    <!-- end of section 1-->
+
+    <!-- start of section 2-->
+    <div>
+        <div class="content-wrap">
+            <h3 class="titles">Our top picks for you</h3>
+            <div class="flex-container ">
+                <div>
+                    <div class="recipe-card">
+                        <img src="/images/pizza-dough.jpg" alt="Pizza Dough">
+                        <div class="recipe-card-text">
+                            <h3>The ultimate pizza dough</h3>
+                            <p>This is the only pizza dough recipe you will ever need!</p>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="recipe-card">
+                        <img src="/images/cupcakes.webp" alt="Cupcakes">
+                        <div class="recipe-card-text">
+                            <h3>Classic vanilla cupcakes</h3>
+                            <p>Light and fluffy, this cupcake recipe is a timeless classic!</p>
+                            <a href="html/cupcakes.html">View Recipe &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="recipe-card">
+                        <img src="images/butter-cookies-4.webp" usemap="#image-map" alt="butter cookies">
+                        <!-- use of image map -->
+                        <map name="image-map">
+                            <area alt="butter-cookies" href="html/butter-cookies.html" coords="140,108,41" shape="circle">
+                        </map>
+                        <div class="recipe-card-text">
+                            <h3>Butter cookies</h3>
+                            <p>The rich, buttery flavour and crisp texture will leave wanting more.</p>
+                            <a href="#butter-cookies">Click on the cookie in the middle for the recipe!  &uarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end of section 2-->
+
+    <!-- // start of section 3-->
+    <div>
+        <div class="content-wrap">
+            
+            <div class="flex-container">
+                <div>
+                    <a href="#mac-cheese">
+                        <img src="images/cupcake2.webp" alt="cupakes" id="month-recipe-img">
+                    </a>
+                </div>
+                <div>
+                    <h3 class="month-recipe">Recipe of the month</h3>
+                    <p id="month-recipe-text"><strong>Buttery, creamy, soft and tasty cupcakes.</strong><br>From birthday parties, casual get-togethers to more formal events, these cupcakes are perfect for all occasions.</p>
+                </div>  
+
+                <div>
+                    <button class="get-recipe-btn" onclick="document.location='html/cupcakes.html'">Get Recipe &gt; &gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end of section 3-->
+
+    <!-- testimonial section -->
+
+    <section class="testimonials">
+        <div class="content-wrap">
+            <h2 class="titles">What Our Readers have to say</h2>
+            <div class="flex-container">
+                <!-- testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text"><q>The recipes on this website are so simple and easy to follow. Can't wait to see more!</q><br>
+                    <cite>Kelly S.</cite></p>
+                </div>
+
+                <!-- testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text"><q>The butter cookies are just mind-blowing! Definitely reminded me of my childhood.</q><br>
+                    <cite>Stella K.</cite></p>
+                </div>
+
+                <!-- testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text"><q>Tried the cupcake recipe for my son's birthday party. It was an absolute winner!</q><br>
+                    <cite>Patrick F.</cite></p>
+                </div>
+
+                <!-- testimonial 4 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text"><q>Spent so much time looking for the perfect pizza dough recipe, finally found it.</q><br>
+                    <cite>Sarah M.</cite></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- end of testimonial section -->
+    <!-- // end of main-->
+    </main>
+    <!-- // start of footer-->
+    <footer>
+        <div class="content-wrap flex-container">
+            <div>
+                <a href="html/about-us.html" class="footer-link">
+                    <p>About Us</p>
+                </a>
+                <p>&copy;CookEasyWithUs</p>
+                <p>Created by Saania H.</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px;border-radius:0;"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>
+            <div>
+                <a href="html/review.html" class="footer-link"><p>Feel free to leave us a review!</p></a>
+            </div>
+        </div>
+    </footer>
+    <!-- // end of footer-->
+
+    <!-- //javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>
