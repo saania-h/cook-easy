@@ -169,7 +169,7 @@ a {
     font-size: 1.3em;
     font-style: oblique;
     font-weight: bold;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
     letter-spacing: 1px;
     margin: 0px;
 }
@@ -264,7 +264,7 @@ footer i {
 
 .cookie-tips summary{
     font-size: 1.4em;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
 }
 
 .cookie-tips details {
@@ -302,7 +302,7 @@ iframe{
     font-size: 1.5em;
     background-color: transparent;
     margin-left: 20px;
-    font-family: myFont3;
+    font-family: myFont3, cursive, sans-serif;
 }
 
 .components {
@@ -311,7 +311,7 @@ iframe{
 }
 
 .titles {
-    font-family: myFont2;
+    font-family: myFont2, cursive, sans-serif;
     font-size: 2.1em;
     padding: 0;
     margin: 0 0 10px 0;
@@ -350,7 +350,7 @@ iframe{
 .recipe-card-text h3 {
     text-align: center;
     background: transparent;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
     letter-spacing: 1px;
     font-size: 1.3em;
 }
@@ -364,7 +364,7 @@ iframe{
 
 /* recipe of the month style */
 .month-recipe {
-    font-family: myFont2;
+    font-family: myFont2, cursive, sans-serif;
     display: block;
     text-align: center;
     font-size: 2.5em;
@@ -393,7 +393,7 @@ iframe{
     width: 150px;
     height: 50px;
     border-radius: 15px;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
     font-size: 1.2em;
 }
 
@@ -480,7 +480,7 @@ cite {
 
 /* styles for h2 */
 h2 {
-    font-family: myFont2;
+    font-family: myFont2, cursive, sans-serif;
     z-index: 1;
 }
 
@@ -583,14 +583,14 @@ img {
 }
 
 .form-h1 {
-    font-family: myFont2;
+    font-family: myFont2, cursive, sans-serif;
     font-size: 2.3em;
     font-style: oblique;
 }
 
 legend {
     font-size: 1.3em;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
 }
 
 fieldset {
@@ -614,7 +614,7 @@ input {
     border-radius: 15px;
     height: 50px;
     font-weight: bold;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
     font-size: 1.1em;
     letter-spacing: 1px;
 }
@@ -625,7 +625,7 @@ input {
 }
 
 .error-msg {
-    font-family: myFont3;
+    font-family: myFont3, cursive, sans-serif;
     font-size: 0.7em;
 }
 
@@ -798,7 +798,7 @@ video {
     height: 40px;
     width: 100px;
     font-weight: bold;
-    font-family: myFont;
+    font-family: myFont, cursive, sans-serif;
     font-size: 1.0em;
     letter-spacing: 1px;
 }
