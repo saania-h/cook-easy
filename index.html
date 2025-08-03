@@ -9,24 +9,23 @@
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e4d8d0e499.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <!-- // start of header-->
     <header>
-        <div>
             <!-- insert logo here-->
-            <div >
+            <div class="narrow-logo">
             <a href="../index.html" >
-                <img src="../images/logo2.png" alt="Cook Easy logo" class="logo narrow-logo" >
+                <img src="../images/logo2.png" alt="Cook Easy logo" class="logo" >
             </a>
             </div>
         <!-- // start of nav bar-->
-            <div >
+            <div>
                 <nav>
-                    
-                    <ul>
+                    <ul style="z-index: 5;">
                         <li><a href="html/dough.html">Dough</a></li>
                         <li><a href="html/cakes.html">Cakes</a></li>
                         <li><a href="html/cookies.html">Cookies</a></li>
@@ -40,7 +39,6 @@
                 </nav>
             </div>
         <!-- // end of nav bar-->
-        </div>
     </header>
     <!-- // end of header-->
 
@@ -54,7 +52,7 @@
                 <div class="text">Creamy Mac & Cheese</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides fade" style="z-index: 2;">
                 <a href="html/cupcakes.html">
                     <img src="images/cupcake-ss.webp" alt="chocolate cupcake">
                     <div class="text">Classic Cupcakes</div>
