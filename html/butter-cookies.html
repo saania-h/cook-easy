@@ -6,6 +6,7 @@
     <meta name="description" content="Discover the perfect butter cookies recipe that just melts in your mouth!">
     <title>Butter cookies</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
@@ -135,46 +136,78 @@
                 <div>
                     <figure>
                         <picture>
-                            <img src="../images/butter-cookies-1.webp" alt="whisked butter" class="steps-img">
+                            <img src="../images/butter-cookies-1.webp" alt="Whisked Butter" class="steps-img" id="myImg1">
                         </picture>
                         <figcaption>Whisked butter</figcaption>
                     </figure>
+                    <!-- The Modal -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" id="span1">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption1"></div>
+                    </div>
                 </div>
 
                 <div>
                     <figure>
                         <picture>
-                            <img src="../images/butter-cookies-2.webp" alt="whisked butter" class="steps-img">
+                            <img src="../images/butter-cookies-2.webp" alt="Add Sugar" class="steps-img" id="myImg2">
                         </picture>
                         <figcaption>Add sugar</figcaption>
                     </figure>
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+                        <span class="close" id="span2">&times;</span>
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                    </div>
                 </div>
 
                 <div>
                     <figure>
                         <picture>
-                            <img src="../images/butter-cookies-5.png" alt="whisked butter" class="steps-img">
+                            <img src="../images/butter-cookies-5.png" alt="Add Flour" class="steps-img" id="myImg3">
                         </picture>
                         <figcaption>Add flour</figcaption>
                     </figure>
+                    <!-- The Modal -->
+                    <div id="myModal3" class="modal">
+                        <span class="close"id="span3">&times;</span>
+                        <img class="modal-content" id="img03">
+                        <div id="caption3"></div>
+                    </div>
                 </div>
 
                 <div>
                     <figure>
                         <picture>
-                            <img src="../images/butter-cookies-3.webp" alt="whisked butter" class="steps-img">
+                            <!-- image -->
+                            <img src="../images/butter-cookies-3.webp" alt="Piped Dough" class="steps-img" id="myImg4">
                         </picture>
                         <figcaption>Piped dough</figcaption>
                     </figure>
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modal">
+                        <span class="close"id="span4">&times;</span>
+                        <img class="modal-content" id="img04">
+                        <div id="caption4"></div>
+                    </div>
                 </div>
 
                 <div>
                     <figure>
                         <picture>
-                            <img src="../images/butter-cookies-4.webp" alt="whisked butter" class="steps-img">
+                            <!-- image -->
+                            <img src="../images/butter-cookies-4.webp" alt="Final Result" class="steps-img" id="myImg5">
                         </picture>
-                        <figcaption>Final results</figcaption>
+                        <figcaption>Final result</figcaption>
                     </figure>
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modal">
+                        <span class="close" id="span5">&times;</span>
+                        <img class="modal-content" id="img05">
+                        <div id="caption5"></div>
+                    </div>
                 </div>
 
             </div>
@@ -237,5 +270,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/nav-bar.js"></script>
     <script src="../js/date-upload.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>
