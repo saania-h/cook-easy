@@ -64,11 +64,6 @@ header nav ul {
     
 }
 
-/* .nav-div {
-    position: relative;
-
-} */
-
 /* nav bar styles */
 nav {
     text-align: center;
@@ -138,7 +133,6 @@ a {
 }
 
 .image__img {
-    /* display: block; */
     width: 300px;
     height: 200px;
     border-radius: 10px;
@@ -189,7 +183,6 @@ ul {
 footer {
     text-align: center;
     font-size: 1.2em;
-    /* height: 185px; */
     background-color: var(--color-border);
     
 }
@@ -405,13 +398,6 @@ iframe{
 }
 /* end of style for emojis */
 
-/* section div p {
-    font-size: 1.3em;
-    font-style: oblique;
-    padding-left: 30%;
-    padding-top: 8%;
-} */
-
 /* testimonial section */
 
 .testimonial-grid {
@@ -526,14 +512,6 @@ h2 {
     margin: 0 auto;
 }
 
-/* nav-bar icon style */
-/* .icon-class {
-    font-size: 1.5em;
-    margin-top: 40px;
-} */
-
-/* end of nav-bar icon style */
-
 /* start of hamburger nav menu */
 
 .icon {
@@ -544,8 +522,6 @@ h2 {
 
 .showing {
     max-height: 100em;
-    /* margin-top: 0;
-    z-index: 10; */
 }
 
 /* end of hamburger nav manu */
@@ -721,8 +697,6 @@ video {
 .recipe-p {
     font-size: 1.2em;
     margin: 30px;
-    
-    /* text-align: justify; */
 }
 
 .process-title {
@@ -853,10 +827,6 @@ video {
         top: 15px;
         font-size: 1.9em;
         background: transparent;
-    }
-
-    .narrow-content {
-        flex: 1;
     }
 
     .narrow-logo {
